@@ -1,0 +1,26 @@
+# Administrator Analytics Enhancement
+
+- [x] Establish live platform records as the initial source for admissions and enrollment analytics.
+- [x] Upgrade the project with the backend and database capabilities required for real-time data delivery.
+- [x] Define the admissions and enrollment data model, API routes, and secure administrator access controls.
+- [x] Implement the analytics dashboard, including KPI cards, trend charts, funnel views, and drill-down tables.
+- [x] Connect real-time updates and clear operational states for incoming data.
+- [x] Validate the dashboard at desktop and mobile breakpoints, then deliver the checkpoint.
+- [x] Protect the analytics endpoint for production administrator access while preserving the non-sensitive visual walkthrough.
+- [x] Add a programme-level analytics drill-down table connected to the demand view.
+- [x] Provide an administrator-triggered live record action so the dashboard can demonstrate updates from stored platform data.
+- [x] Restrict the public walkthrough to fixed, non-sensitive demonstration analytics.
+- [x] Replace the faculty ledger with a true programme-level drill-down table.
+- [x] Sanitize public walkthrough activity labels and verify that no applicant-like identifiers are returned.
+- [x] Add a Chancellor portrait and leadership feature section to the public homepage.
+- [x] Add a prominent Faculties section with clear academic-school pathways.
+- [x] Convert public action controls to a coherent rounded rectangle or pill treatment.
+- [x] Make the public primary navigation sticky while preserving mobile usability.
+- [x] Validate the refined homepage at desktop and mobile breakpoints.
+- [x] Add an on-page guided platform walkthrough that demonstrates applicant, student, lecturer, and administrator journeys.
+- [x] Connect a short demo intake action to the administrator analytics flow with clear non-sensitive demonstration data.
+- [x] Add an awards-and-recognition section that avoids unsupported claims while presenting client-ready credential placeholders.
+- [x] Add non-interactive, accessible social-profile icons to the public footer.
+- [x] Validate the new capability proof points at desktop and mobile breakpoints.
+- [x] Connect the public guided-journey CTA to a sanitized persisted intake event and route the user into the administrator handoff.
+- [x] Surface the sanitized guided intake in the routed public administrator walkthrough and validate the end-to-end handoff.
