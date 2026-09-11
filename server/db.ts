@@ -178,7 +178,7 @@ export async function recordWalkthroughIntake(): Promise<{ persisted: boolean; r
   const now = new Date();
   await db.insert(admissionApplications).values({
     reference,
-    applicantName: "Incoming Heritage Applicant",
+    applicantName: "Incoming Ummah Applicant",
     programme: "Computer Science",
     faculty: "Computing & Natural Sciences",
     status: "under_review",

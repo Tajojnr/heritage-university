@@ -55,11 +55,11 @@ import {
 type View = "public" | "login" | "workspace";
 type Role = "student" | "lecturer" | "admin" | "applicant";
 
-const brandMark = "/images/Heritage-quadrant-mark_c9843de3.png";
-const heroCampus = "/images/Heritage-hero-campus_5fb96777.jpg";
-const studioLearning = "/images/Heritage-studio-learning_b79ee70a.jpg";
-const campusCommunity = "/images/Heritage-campus-community_25544302.jpg";
-const chancellorPortrait = "/images/Heritage-chancellor-portrait_3255cfc4.jpg";
+const brandMark = "/images/Ummah-quadrant-mark_c9843de3.png";
+const heroCampus = "/images/Ummah-hero-campus_5fb96777.jpg";
+const studioLearning = "/images/Ummah-studio-learning_b79ee70a.jpg";
+const campusCommunity = "/images/Ummah-campus-community_25544302.jpg";
+const chancellorPortrait = "/images/Ummah-chancellor-portrait_3255cfc4.jpg";
 
 const programmes = [
   { code: "ENG", name: "Engineering & Built Environment", programmes: "18 programmes", tint: "amber" },
@@ -101,9 +101,9 @@ function SectionLabel({ number, eyebrow, title }: { number: string; eyebrow: str
 function Logo({ inverse = false }: { inverse?: boolean }) {
   return (
     <div className={`brand ${inverse ? "brand-inverse" : ""}`}>
-      <img src={brandMark} alt="Heritage University" className="brand-mark" />
+      <img src={brandMark} alt="Ummah University" className="brand-mark" />
       <div className="brand-wordmark">
-        <span>Heritage</span>
+        <span>Ummah</span>
         <small>University</small>
       </div>
     </div>
@@ -133,7 +133,7 @@ function PublicHeader({ open, setOpen, onPortal }: { open: boolean; setOpen: (va
           ))}
         </nav>
         <div className="header-actions">
-          <button className="portal-link" onClick={onPortal}>My Heritage <ArrowRight size={15} /></button>
+          <button className="portal-link" onClick={onPortal}>My Ummah <ArrowRight size={15} /></button>
           <button className="header-apply" onClick={() => scrollTo("admissions")}>Apply now</button>
           <button className="menu-button" onClick={() => setOpen(!open)} aria-label="Toggle menu">
             {open ? <X size={22} /> : <Menu size={22} />}
@@ -145,7 +145,7 @@ function PublicHeader({ open, setOpen, onPortal }: { open: boolean; setOpen: (va
           {links.map(([label, id]) => (
             <button key={id} onClick={() => { scrollTo(id); setOpen(false); }}>{label}<ChevronRight size={17} /></button>
           ))}
-          <button className="mobile-portal" onClick={() => { onPortal(); setOpen(false); }}>Enter My Heritage <ArrowRight size={17} /></button>
+          <button className="mobile-portal" onClick={() => { onPortal(); setOpen(false); }}>Enter My Ummah <ArrowRight size={17} /></button>
         </div>
       )}
     </header>
@@ -173,7 +173,7 @@ function PublicExperience({ onPortal, onLogin, onOpenRole }: { onPortal: () => v
       <PublicHeader open={menuOpen} setOpen={setMenuOpen} onPortal={onPortal} />
 
       <section className="hero-section">
-        <img src={heroCampus} alt="Students on the Heritage University campus" className="hero-image" />
+        <img src={heroCampus} alt="Students on the Ummah University campus" className="hero-image" />
         <div className="hero-overlay" />
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-content">
@@ -192,7 +192,7 @@ function PublicExperience({ onPortal, onLogin, onOpenRole }: { onPortal: () => v
       </section>
 
       <section id="about" className="stat-band">
-        <div className="stat-intro"><p className="eyebrow">Heritage at a glance</p><p>Built as a community of scholarship, practice, and public imagination.</p></div>
+        <div className="stat-intro"><p className="eyebrow">Ummah at a glance</p><p>Built as a community of scholarship, practice, and public imagination.</p></div>
         <div className="stats-grid">
           <div><strong>13,800</strong><span>Students across<br />four schools</span></div>
           <div><strong>70<span className="stat-unit">+</span></strong><span>Undergraduate and<br />postgraduate pathways</span></div>
@@ -242,7 +242,7 @@ function PublicExperience({ onPortal, onLogin, onOpenRole }: { onPortal: () => v
         <div className="admissions-content">
           <span className="chapter-tag">03 / Admissions 2026</span>
           <h2>Choose the path that makes the work worth doing.</h2>
-          <p>Apply to Heritage with a clear view of your next steps. Track requirements, build an application, and understand your offer from one considered place.</p>
+          <p>Apply to Ummah with a clear view of your next steps. Track requirements, build an application, and understand your offer from one considered place.</p>
           <div className="admission-steps">
             <div><span>01</span><p><strong>Start your application</strong> Create a secure applicant profile.</p></div>
             <div><span>02</span><p><strong>Find your programme</strong> Compare entry routes and requirements.</p></div>
@@ -255,7 +255,7 @@ function PublicExperience({ onPortal, onLogin, onOpenRole }: { onPortal: () => v
       <section className="platform-section">
         <div className="platform-heading">
           <SectionLabel number="04" eyebrow="One university, connected" title="Every academic journey deserves a clearer interface." />
-          <p>From the first prospectus page to the final result, Heritageâ€™s digital campus holds the essential work of university life together.</p>
+          <p>From the first prospectus page to the final result, Ummahâ€™s digital campus holds the essential work of university life together.</p>
         </div>
         <div className="service-cards">
           <article className="service-card service-card-main">
@@ -294,7 +294,7 @@ function PublicExperience({ onPortal, onLogin, onOpenRole }: { onPortal: () => v
         <div className="campus-copy">
           <p className="eyebrow">A campus with a point of view</p>
           <h2>Knowledge happens<br />in the space <em>between</em>.</h2>
-          <p>Heritage is a place to make things, test ideas, and discover a network that stays useful long after graduation.</p>
+          <p>Ummah is a place to make things, test ideas, and discover a network that stays useful long after graduation.</p>
           <div className="campus-notes">
             <span><MapPin size={16} /> Kawo, Kaduna State</span>
             <span><CalendarDays size={16} /> Open day Â· 14 October</span>
@@ -305,12 +305,12 @@ function PublicExperience({ onPortal, onLogin, onOpenRole }: { onPortal: () => v
       </section>
 
       <section id="leadership" className="leadership-section">
-        <div className="leadership-image-wrap"><img src={chancellorPortrait} alt="Professor Imani Adeyemi, Chancellor of Heritage University" /><span className="leadership-image-note">Office of the Chancellor / Heritage University</span></div>
+        <div className="leadership-image-wrap"><img src={chancellorPortrait} alt="Professor Imani Adeyemi, Chancellor of Ummah University" /><span className="leadership-image-note">Office of the Chancellor / Ummah University</span></div>
         <div className="leadership-copy">
           <span className="chapter-tag">05 / Leadership</span>
           <h2>Lead with curiosity.<br /><em>Leave with responsibility.</em></h2>
           <blockquote>â€œA university earns its place by sending people into the world who can think clearly, act generously, and build what their communities need.â€</blockquote>
-          <div className="leadership-signoff"><div><strong>Professor Imani Adeyemi</strong><span>Chancellor, Heritage University</span></div><button className="button button-outline-light" onClick={onPortal}>Meet our leadership <ArrowRight size={16} /></button></div>
+          <div className="leadership-signoff"><div><strong>Professor Imani Adeyemi</strong><span>Chancellor, Ummah University</span></div><button className="button button-outline-light" onClick={onPortal}>Meet our leadership <ArrowRight size={16} /></button></div>
         </div>
       </section>
 
@@ -320,11 +320,11 @@ function PublicExperience({ onPortal, onLogin, onOpenRole }: { onPortal: () => v
       </section>
 
       <section id="news" className="journal-section">
-        <div className="journal-heading"><SectionLabel number="07" eyebrow="The Heritage Journal" title="News from a university at work." /><button className="text-link" onClick={onLogin}>Visit the journal <ArrowRight size={17} /></button></div>
+        <div className="journal-heading"><SectionLabel number="07" eyebrow="The Ummah Journal" title="News from a university at work." /><button className="text-link" onClick={onLogin}>Visit the journal <ArrowRight size={17} /></button></div>
         <div className="journal-grid">
-          <article className="journal-card journal-featured"><span className="journal-meta">Research Â· 12 August 2026</span><h3>Designing public spaces that help cities breathe.</h3><p>Heritage researchers turn climate data into tools for more liveable neighbourhoods.</p><button onClick={onLogin}>Read story <ArrowRight size={17} /></button></article>
+          <article className="journal-card journal-featured"><span className="journal-meta">Research Â· 12 August 2026</span><h3>Designing public spaces that help cities breathe.</h3><p>Ummah researchers turn climate data into tools for more liveable neighbourhoods.</p><button onClick={onLogin}>Read story <ArrowRight size={17} /></button></article>
           <article className="journal-card"><span className="journal-meta">Campus Â· 24 July 2026</span><h3>The new Applied Computing Studio opens its doors.</h3><button onClick={onLogin}>Read story <ArrowRight size={17} /></button></article>
-          <article className="journal-card journal-event"><span className="journal-meta">Next event</span><strong>14<span>Oct</span></strong><h3>Future Fields: Heritage Open Day</h3><button onClick={onLogin}>Plan your visit <ArrowRight size={17} /></button></article>
+          <article className="journal-card journal-event"><span className="journal-meta">Next event</span><strong>14<span>Oct</span></strong><h3>Future Fields: Ummah Open Day</h3><button onClick={onLogin}>Plan your visit <ArrowRight size={17} /></button></article>
         </div>
       </section>
 
@@ -335,8 +335,8 @@ function PublicExperience({ onPortal, onLogin, onOpenRole }: { onPortal: () => v
       </section>
 
       <footer className="footer">
-        <div className="footer-top"><Logo /><p>Heritage University<br />Kawo, Kaduna State<br />Nigeria</p><a href="mailto:enquiries@Heritage.edu">enquiries@Heritage.edu</a><a href="tel:+2340000000000">+234 000 000 0000</a></div>
-        <div className="footer-bottom"><span>Â© 2026 Heritage University</span><span>Study. Make. Matter.</span><div className="footer-utilities"><div className="footer-socials" aria-label="Official social profiles coming soon"><span title="LinkedIn profile coming soon" aria-label="LinkedIn profile coming soon"><Linkedin size={15} /></span><span title="Instagram profile coming soon" aria-label="Instagram profile coming soon"><Instagram size={15} /></span><span title="Facebook profile coming soon" aria-label="Facebook profile coming soon"><Facebook size={15} /></span><span title="YouTube profile coming soon" aria-label="YouTube profile coming soon"><Youtube size={16} /></span></div><button onClick={onPortal}>My Heritage <ArrowRight size={14} /></button></div></div>
+        <div className="footer-top"><Logo /><p>Ummah University<br />Kawo, Kaduna State<br />Nigeria</p><a href="mailto:enquiries@Ummah.edu">enquiries@Ummah.edu</a><a href="tel:+2340000000000">+234 000 000 0000</a></div>
+        <div className="footer-bottom"><span>Â© 2026 Ummah University</span><span>Study. Make. Matter.</span><div className="footer-utilities"><div className="footer-socials" aria-label="Official social profiles coming soon"><span title="LinkedIn profile coming soon" aria-label="LinkedIn profile coming soon"><Linkedin size={15} /></span><span title="Instagram profile coming soon" aria-label="Instagram profile coming soon"><Instagram size={15} /></span><span title="Facebook profile coming soon" aria-label="Facebook profile coming soon"><Facebook size={15} /></span><span title="YouTube profile coming soon" aria-label="YouTube profile coming soon"><Youtube size={16} /></span></div><button onClick={onPortal}>My Ummah <ArrowRight size={14} /></button></div></div>
       </footer>
     </main>
   );
@@ -354,7 +354,7 @@ function StudentWorkspace({ section }: { section: string }) {
     <div className="workspace-content"><div className="page-intro"><div><p className="eyebrow">Academic record / 2025â€“2026</p><h1>Results</h1><p>Review assessed work and your semester performance.</p></div><button className="select-button">2025 / 2026 <ChevronDown size={16} /></button></div><div className="result-summary"><div><span>First semester</span><strong>4.25</strong><p>Semester GPA</p></div><div><span>Cumulative record</span><strong>3.82<span>/5.00</span></strong><p>CGPA Â· Good standing</p></div><div className="result-note"><CircleCheck size={20} /><p><strong>All results published.</strong><br />This record was updated on 08 July 2026.</p></div></div><section className="data-panel"><div className="data-panel-head"><div><h3>Module outcomes</h3><span>First semester</span></div><button className="action-button"><Download size={15} /> Statement</button></div><div className="table-wrap"><table><thead><tr><th>Course</th><th>Title</th><th>Score</th><th>Grade</th><th>Units</th></tr></thead><tbody>{results.map((result) => <tr key={result[0]}><td><span className="course-code">{result[0]}</span></td><td>{result[1]}</td><td>{result[2]}</td><td><span className={`grade grade-${result[3].toLowerCase()}`}>{result[3]}</span></td><td>{result[4]}</td></tr>)}</tbody></table></div></section></div>
   );
   if (section === "profile") return (
-    <div className="workspace-content"><div className="page-intro"><div><p className="eyebrow">Personal record</p><h1>My profile</h1><p>Your registered academic and contact information.</p></div><button className="action-button"><Settings size={16} /> Update details</button></div><section className="profile-panel"><div className="profile-hero"><div className="avatar avatar-large">AS</div><div><h2>Ahmad Sani</h2><p>AXU/2023/CSC/1148 Â· B.Sc. Computer Science</p><span className="status-pill success">Good standing</span></div></div><div className="profile-grid"><div><span>Faculty</span><strong>Computing & Natural Sciences</strong></div><div><span>Department</span><strong>Computer Science</strong></div><div><span>Current level</span><strong>300 Level</strong></div><div><span>University email</span><strong>ahmad.sani@students.Heritage.edu</strong></div><div><span>Phone</span><strong>+234 803 000 1148</strong></div><div><span>Programme duration</span><strong>4 years, full-time</strong></div></div></section></div>
+    <div className="workspace-content"><div className="page-intro"><div><p className="eyebrow">Personal record</p><h1>My profile</h1><p>Your registered academic and contact information.</p></div><button className="action-button"><Settings size={16} /> Update details</button></div><section className="profile-panel"><div className="profile-hero"><div className="avatar avatar-large">AS</div><div><h2>Ahmad Sani</h2><p>AXU/2023/CSC/1148 Â· B.Sc. Computer Science</p><span className="status-pill success">Good standing</span></div></div><div className="profile-grid"><div><span>Faculty</span><strong>Computing & Natural Sciences</strong></div><div><span>Department</span><strong>Computer Science</strong></div><div><span>Current level</span><strong>300 Level</strong></div><div><span>University email</span><strong>ahmad.sani@students.Ummah.edu</strong></div><div><span>Phone</span><strong>+234 803 000 1148</strong></div><div><span>Programme duration</span><strong>4 years, full-time</strong></div></div></section></div>
   );
   return (
     <div className="workspace-content">
@@ -476,7 +476,7 @@ function AdminWorkspace({ section, onApprove, onOpenAdmissions, guidedHandoffRef
 }
 
 function ApplicantWorkspace({ onApply }: { onApply: () => void }) {
-  return <div className="workspace-content applicant-workspace"><div className="page-intro"><div><p className="eyebrow">Admissions 2026â€“2027</p><h1>Your application, in view.</h1><p>Complete each section to prepare your Heritage application for review.</p></div><span className="status-pill pending">Draft application</span></div><section className="application-card"><div className="application-card-top"><div><span className="course-code">AXU/APP/2026/00124</span><h2>Computer Science</h2><p>B.Sc. Â· Full-time Â· 4 years</p></div><span className="application-completion"><strong>60%</strong> Complete</span></div><div className="application-progress"><span /></div><div className="application-steps"><button><span className="step-done"><Check size={15} /></span><div><strong>Personal details</strong><small>Completed</small></div><ChevronRight size={17} /></button><button><span className="step-done"><Check size={15} /></span><div><strong>Academic history</strong><small>Completed</small></div><ChevronRight size={17} /></button><button><span className="step-current">3</span><div><strong>Supporting documents</strong><small>2 documents needed</small></div><ChevronRight size={17} /></button><button><span className="step-next">4</span><div><strong>Review & submit</strong><small>Not started</small></div><ChevronRight size={17} /></button></div><div className="application-action"><div><UploadCloud size={20} /><p><strong>Next: add your documents.</strong><br />Upload your academic transcript and identity document.</p></div><button className="button button-ink" onClick={onApply}>Continue application <ArrowRight size={16} /></button></div></section><section className="application-help"><Sparkles size={20} /><div><strong>Need a hand with your application?</strong><p>Our admissions team is available Mondayâ€“Friday, 08:30â€“16:30.</p></div><button className="text-link">Contact admissions <ArrowRight size={16} /></button></section></div>;
+  return <div className="workspace-content applicant-workspace"><div className="page-intro"><div><p className="eyebrow">Admissions 2026â€“2027</p><h1>Your application, in view.</h1><p>Complete each section to prepare your Ummah application for review.</p></div><span className="status-pill pending">Draft application</span></div><section className="application-card"><div className="application-card-top"><div><span className="course-code">AXU/APP/2026/00124</span><h2>Computer Science</h2><p>B.Sc. Â· Full-time Â· 4 years</p></div><span className="application-completion"><strong>60%</strong> Complete</span></div><div className="application-progress"><span /></div><div className="application-steps"><button><span className="step-done"><Check size={15} /></span><div><strong>Personal details</strong><small>Completed</small></div><ChevronRight size={17} /></button><button><span className="step-done"><Check size={15} /></span><div><strong>Academic history</strong><small>Completed</small></div><ChevronRight size={17} /></button><button><span className="step-current">3</span><div><strong>Supporting documents</strong><small>2 documents needed</small></div><ChevronRight size={17} /></button><button><span className="step-next">4</span><div><strong>Review & submit</strong><small>Not started</small></div><ChevronRight size={17} /></button></div><div className="application-action"><div><UploadCloud size={20} /><p><strong>Next: add your documents.</strong><br />Upload your academic transcript and identity document.</p></div><button className="button button-ink" onClick={onApply}>Continue application <ArrowRight size={16} /></button></div></section><section className="application-help"><Sparkles size={20} /><div><strong>Need a hand with your application?</strong><p>Our admissions team is available Mondayâ€“Friday, 08:30â€“16:30.</p></div><button className="text-link">Contact admissions <ArrowRight size={16} /></button></section></div>;
 }
 
 function Workspace({ role, setRole, onExit, initialNotice = "", guidedHandoffReference = "" }: { role: Role; setRole: (role: Role) => void; onExit: () => void; initialNotice?: string; guidedHandoffReference?: string }) {
@@ -492,13 +492,13 @@ function Workspace({ role, setRole, onExit, initialNotice = "", guidedHandoffRef
   const switchRole = (nextRole: Role) => { setRole(nextRole); setSection("dashboard"); setNotice(""); };
   const actionNotice = role === "lecturer" ? "Results submitted Â· Sent to the Academic Registry for approval." : role === "admin" ? "Application #2026-00124 marked for decision review." : "Document upload is ready for the next step.";
 
-  return <div className="workspace-shell"><aside className="workspace-sidebar"><div><button className="portal-brand" onClick={onExit}><Logo /><span className="live-chip">Demo</span></button><div className="portal-seal"><img src={brandMark} alt="" /><span>Academic operating system</span><b>2025â€“26</b></div><div className="portal-title"><span>{config.title}</span><button className="sidebar-collapse" aria-label="Collapse navigation"><PanelLeft size={17} /></button></div><nav className="portal-nav">{config.nav.map(([label, id, Icon]) => <button key={id} className={section === id || (id === "dashboard" && section === "dashboard") ? "active" : ""} onClick={() => setSection(id)}><Icon size={18} /> <span>{label}</span>{label === "Notifications" && <b>3</b>}</button>)}</nav></div><div className="sidebar-bottom"><div className="role-switcher"><button className="role-switcher-trigger"><div className="avatar mini">{config.initials}</div><div><strong>{config.person}</strong><span>{config.roleLabel}</span></div><ChevronDown size={15} /></button><div className="role-options"><span>View demo as</span>{(["student", "lecturer", "admin", "applicant"] as Role[]).map((roleOption) => <button key={roleOption} onClick={() => switchRole(roleOption)} className={role === roleOption ? "selected" : ""}>{roleOption === "admin" ? "Administrator" : roleOption[0].toUpperCase() + roleOption.slice(1)}</button>)}</div></div><button className="exit-button" onClick={onExit}><LogOut size={17} /> Public website</button></div></aside><section className={`workspace-main workspace-${role}`}><header className="workspace-mobile-head"><button onClick={onExit}><img src={brandMark} alt="" /> Heritage</button><span>{config.title}</span><button className="avatar mini">{config.initials}</button></header><div className="workspace-system-strip"><span className="system-rule" /><div><strong>{config.title}</strong><small>Heritage Academic OS / 2025â€“2026</small></div><div className="system-identity"><img src={brandMark} alt="" /><span>{role === "student" ? "Academic record" : role === "lecturer" ? "Teaching operations" : role === "admin" ? "Institutional intelligence" : "Admissions dossier"}</span></div></div>{notice && <div className="success-banner"><CircleCheck size={18} /><span>{notice}</span><button onClick={() => setNotice("")}><X size={16} /></button></div>}{role === "student" && <StudentWorkspace section={section} />}{role === "lecturer" && <LecturerWorkspace section={section} onSubmit={() => setNotice(actionNotice)} />}{role === "admin" && <AdminWorkspace section={section} onApprove={() => setNotice(actionNotice)} onOpenAdmissions={() => setSection("admissions")} guidedHandoffReference={guidedHandoffReference} />}{role === "applicant" && <ApplicantWorkspace onApply={() => setNotice(actionNotice)} />}</section></div>;
+  return <div className="workspace-shell"><aside className="workspace-sidebar"><div><button className="portal-brand" onClick={onExit}><Logo /><span className="live-chip">Demo</span></button><div className="portal-seal"><img src={brandMark} alt="" /><span>Academic operating system</span><b>2025â€“26</b></div><div className="portal-title"><span>{config.title}</span><button className="sidebar-collapse" aria-label="Collapse navigation"><PanelLeft size={17} /></button></div><nav className="portal-nav">{config.nav.map(([label, id, Icon]) => <button key={id} className={section === id || (id === "dashboard" && section === "dashboard") ? "active" : ""} onClick={() => setSection(id)}><Icon size={18} /> <span>{label}</span>{label === "Notifications" && <b>3</b>}</button>)}</nav></div><div className="sidebar-bottom"><div className="role-switcher"><button className="role-switcher-trigger"><div className="avatar mini">{config.initials}</div><div><strong>{config.person}</strong><span>{config.roleLabel}</span></div><ChevronDown size={15} /></button><div className="role-options"><span>View demo as</span>{(["student", "lecturer", "admin", "applicant"] as Role[]).map((roleOption) => <button key={roleOption} onClick={() => switchRole(roleOption)} className={role === roleOption ? "selected" : ""}>{roleOption === "admin" ? "Administrator" : roleOption[0].toUpperCase() + roleOption.slice(1)}</button>)}</div></div><button className="exit-button" onClick={onExit}><LogOut size={17} /> Public website</button></div></aside><section className={`workspace-main workspace-${role}`}><header className="workspace-mobile-head"><button onClick={onExit}><img src={brandMark} alt="" /> Ummah</button><span>{config.title}</span><button className="avatar mini">{config.initials}</button></header><div className="workspace-system-strip"><span className="system-rule" /><div><strong>{config.title}</strong><small>Ummah Academic OS / 2025â€“2026</small></div><div className="system-identity"><img src={brandMark} alt="" /><span>{role === "student" ? "Academic record" : role === "lecturer" ? "Teaching operations" : role === "admin" ? "Institutional intelligence" : "Admissions dossier"}</span></div></div>{notice && <div className="success-banner"><CircleCheck size={18} /><span>{notice}</span><button onClick={() => setNotice("")}><X size={16} /></button></div>}{role === "student" && <StudentWorkspace section={section} />}{role === "lecturer" && <LecturerWorkspace section={section} onSubmit={() => setNotice(actionNotice)} />}{role === "admin" && <AdminWorkspace section={section} onApprove={() => setNotice(actionNotice)} onOpenAdmissions={() => setSection("admissions")} guidedHandoffReference={guidedHandoffReference} />}{role === "applicant" && <ApplicantWorkspace onApply={() => setNotice(actionNotice)} />}</section></div>;
 }
 
 function Login({ setRole, onEnter, onExit }: { setRole: (role: Role) => void; onEnter: () => void; onExit: () => void }) {
   const [selectedRole, selectRole] = useState<Role>("student");
   const roles: { id: Role; label: string; description: string; icon: typeof GraduationCap }[] = [{ id: "student", label: "Student", description: "Courses, results, profile & notices", icon: GraduationCap }, { id: "lecturer", label: "Lecturer", description: "Classes, students & result entry", icon: ClipboardCheck }, { id: "admin", label: "Administrator", description: "Admissions & academic operations", icon: BarChart3 }, { id: "applicant", label: "Applicant", description: "Application progress & documents", icon: FileCheck2 }];
-  return <div className="login-page"><div className="login-brand-panel"><button className="brand-button" onClick={onExit}><Logo inverse /></button><div className="login-brand-copy"><p className="hero-kicker"><span /> Heritage digital campus</p><h1>One place to move <em>forward</em>.</h1><p>A considered, connected interface for every university journey.</p></div><div className="login-panel-foot"><span>Heritage University</span><span>Study. Make. Matter.</span></div></div><main className="login-content"><button className="back-link" onClick={onExit}><ArrowRight size={17} className="back-icon" /> Return to Heritage</button><div className="login-form"><span className="chapter-tag">Live MVP walkthrough</span><h2>Choose your view.</h2><p>Take the five-minute platform journey from applicant to university administration.</p><div className="persona-grid">{roles.map(({ id, label, description, icon: Icon }) => <button key={id} className={`persona-option ${selectedRole === id ? "selected" : ""}`} onClick={() => selectRole(id)}><span className="persona-icon"><Icon size={20} /></span><span><strong>{label}</strong><small>{description}</small></span><span className="radio" /></button>)}</div><button className="button button-ink login-submit" onClick={() => { setRole(selectedRole); onEnter(); }}>Open {selectedRole === "admin" ? "administrator" : selectedRole} view <ArrowRight size={17} /></button><p className="demo-credentials"><ShieldCheck size={15} /> This interactive preview uses demonstration data only.</p></div></main></div>;
+  return <div className="login-page"><div className="login-brand-panel"><button className="brand-button" onClick={onExit}><Logo inverse /></button><div className="login-brand-copy"><p className="hero-kicker"><span /> Ummah digital campus</p><h1>One place to move <em>forward</em>.</h1><p>A considered, connected interface for every university journey.</p></div><div className="login-panel-foot"><span>Ummah University</span><span>Study. Make. Matter.</span></div></div><main className="login-content"><button className="back-link" onClick={onExit}><ArrowRight size={17} className="back-icon" /> Return to Ummah</button><div className="login-form"><span className="chapter-tag">Live MVP walkthrough</span><h2>Choose your view.</h2><p>Take the five-minute platform journey from applicant to university administration.</p><div className="persona-grid">{roles.map(({ id, label, description, icon: Icon }) => <button key={id} className={`persona-option ${selectedRole === id ? "selected" : ""}`} onClick={() => selectRole(id)}><span className="persona-icon"><Icon size={20} /></span><span><strong>{label}</strong><small>{description}</small></span><span className="radio" /></button>)}</div><button className="button button-ink login-submit" onClick={() => { setRole(selectedRole); onEnter(); }}>Open {selectedRole === "admin" ? "administrator" : selectedRole} view <ArrowRight size={17} /></button><p className="demo-credentials"><ShieldCheck size={15} /> This interactive preview uses demonstration data only.</p></div></main></div>;
 }
 
 function viewFromUrl(): View {

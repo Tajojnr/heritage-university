@@ -3,7 +3,7 @@
 ## Three Possible Directions
 
 ### 1. Civic Atelier
-**Very Brief Intro:** A sophisticated academic identity inspired by contemporary cultural institutions and heritage publishing. Deep ink, parchment, editorial typography, and richly framed campus imagery make the platform feel established, human, and forward-looking.
+**Very Brief Intro:** A sophisticated academic identity inspired by contemporary cultural institutions and Ummah publishing. Deep ink, parchment, editorial typography, and richly framed campus imagery make the platform feel established, human, and forward-looking.
 
 **Probability:** 0.047
 
@@ -65,7 +65,7 @@ Example lines:
 > **Review your academic record, then move forward with confidence.**
 
 ### Wordmark & Logo
-**Heritage University** is rendered as a custom high-contrast editorial wordmark paired with the **Quadrant Mark**: four unequal, offset blocks cut from a single square, with an open central axis. The mark works as an app icon, favicon, and standalone campus symbol without relying on text.
+**Ummah University** is rendered as a custom high-contrast editorial wordmark paired with the **Quadrant Mark**: four unequal, offset blocks cut from a single square, with an open central axis. The mark works as an app icon, favicon, and standalone campus symbol without relying on text.
 
 ### Signature Brand Color
 **Verdigris Teal — `#136C68`**. It is the visual signal for progress, trusted actions, and the university’s modern academic character.
@@ -78,7 +78,7 @@ Example lines:
 
 ## Leadership and Faculties Refinement
 
-The new **Faculties** chapter will sit directly beneath the academic programme overview so visitors immediately see Heritage’s four schools. The composition will use a civic index rather than a hidden secondary list: concise academic-school cards, programme counts, thematic descriptions, and direct exploration paths.
+The new **Faculties** chapter will sit directly beneath the academic programme overview so visitors immediately see Ummah’s four schools. The composition will use a civic index rather than a hidden secondary list: concise academic-school cards, programme counts, thematic descriptions, and direct exploration paths.
 
 The new **Leadership** chapter will arrive as a considered personal statement, balancing a warm Chancellor portrait with a dark-ink editorial field and a restrained mission quote. The portrait is an original fictional institutional figure in natural light—thoughtful, contemporary, and credible rather than staged stock photography. Public action controls will move to a consistent soft rounded-rectangle treatment, while compact status tags retain a pill silhouette. The public masthead will remain sticky with a softly blurred ink surface so navigation stays accessible without breaking the page’s editorial atmosphere.
 
